@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Título</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .content, .header-content, .jogadores-abusados {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+        }
+        .header-content h1 {
+            font-size: 3rem;
+            color: red;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .content iframe {
+            width: 400px;
+            height: 225px;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2rem;
+        }
+        .jogadores-abusados {
+            margin-top: 50px;
+            padding: 50px 0;
+            position: relative;
+        }
+        .jogadores-abusados .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4; /* Ajuste de opacidade para o vídeo de fundo */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+        }
+        .container h2 {
+            font-size: 2rem;
+            color: yellow;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .video-item {
+            margin: 10px;
+            text-align: center;
+            z-index: 1;
+        }
+        .video-item img {
+            width: 100%;
+            max-width: 300px;
+            transition: transform 0.3s;
+            border-radius: 10px;
+        }
+        .video-item img:hover {
+            transform: scale(1.1);
+        }
+        .video-item a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
+        iframe {
+            border: none;
+        }
+        /* Spotify Player Style */
+        .spotify-players {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espaçamento entre os players */
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .spotify-player {
+            background-color: #333;
+            padding: 10px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            width: 100%;
+            max-width: 600px;
+        }
+        .spotify-player iframe {
+            border-radius: 12px;
+            width: 100%;
+            height: 352px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Metflix</h1>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <h2>Bem-vindo ao Metflix</h2>
+            <p>Aqui estará o nosso repositório de vídeos</p>
+            <p>Robinho Was in Another Level 🔥</p>
+            <iframe src="https://www.youtube.com/embed/XOEKpoY7Rv4?si=WMNtmODXhEzUuuz6" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    </main>
+    
+    <!-- Background YouTube Video -->
+    <div class="background-video">
+        <iframe src="https://www.youtube.com/embed/BpmWTyKt3hk?autoplay=1&mute=1&loop=1&playlist=BpmWTyKt3hk" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <section class="jogadores-abusados">
+        <!-- Background Video for Jogadores Abusados -->
+        <div class="background-video">
+            <iframe src="https://www.youtube.com/embed/F6x364LeyPE?autoplay=1&mute=1&start=270&end=283&loop=1&playlist=F6x364LeyPE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <div class="container">
+            <h2>☠️ Jogadores Abusadores ☠️</h2>
+
+            <!-- Vídeo 1 -->
+            <div class="video-item">
+                <a href="https://youtu.be/cF1PCyejrEw?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/cF1PCyejrEw/maxresdefault.jpg" alt="Entrevista com o Goleiro Bruno">
+                </a>
+            </div>
+
+            <!-- Vídeo 2 -->
+            <div class="video-item">
+                <a href="https://youtu.be/K_hUyQhx4Vs?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/K_hUyQhx4Vs/maxresdefault.jpg" alt="Vídeo 2 Thumbnail">
+                </a>
+            </div>
+
+            <!-- Vídeo 3 -->
+            <div class="video-item">
+                <a href="https://youtu.be/MhUH_FjXKzQ?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/MhUH_FjXKzQ/maxresdefault.jpg" alt="Vídeo 3 Thumbnail">
+                </a>
+            </div>
+
+            <!-- Vídeo 4 -->
+            <div class="video-item">
+                <a href="https://youtu.be/C_ns_odXQkU?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/C_ns_odXQkU/maxresdefault.jpg" alt="Vídeo 4 Thumbnail">
+                </a>
+            </div>
+
+            <!-- Vídeo 5 -->
+            <div class="video-item">
+                <a href="https://youtu.be/dsI7ZwLnhTY?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/dsI7ZwLnhTY/maxresdefault.jpg" alt="Vídeo 5 Thumbnail">
+                </a>
+            </div>
+
+            <!-- Vídeo 6 (novo) -->
+            <div class="video-item">
+                <a href="https://youtu.be/bffRAZcZSR0?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/bffRAZcZSR0/maxresdefault.jpg" alt="Vídeo 6 Thumbnail">
+                </a>
+            </div>
+            
+        </div>   
+    </section>
+
+    <!-- Spotify Players -->
+    <section class="spotify-players">
+        <div class="spotify-player">
+            <iframe src="https://open.spotify.com/embed/track/7LjSEjZGbJIlbaRiqd1M3v?utm_source=generator" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="spotify-player">
+            <iframe src="https://open.spotify.com/embed/track/0jAmLvNGo3jKjEjAZHuUg6?utm_source=generator" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+</body>
+</html>
